@@ -14,7 +14,7 @@ function Productadd() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://localhost:8080/addItem", {
+      let res = await fetch("https://trawell-backend-production-1fec.up.railway.app/addItem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
