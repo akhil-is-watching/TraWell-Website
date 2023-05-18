@@ -2,7 +2,6 @@
 
 import "./Productadd.css";
 import { useState } from "react";
-import ip from '../../ip'
 
 function Productadd() {
   const [itemName, setitemName] = useState(" ");
@@ -15,7 +14,7 @@ function Productadd() {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await fetch("http://192.168.211.247:8080/addItem", {
+      let res = await fetch("http://localhost:8080/addItem", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

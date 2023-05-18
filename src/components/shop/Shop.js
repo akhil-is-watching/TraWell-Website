@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./Shop.css";
 import { GoLocation } from "react-icons/go";
 import { BiRupee } from "react-icons/bi";
+import { config } from '../../config'
 
 const UsingFetch = () => {
   const [items, setItems] = useState([]);
 
   const fetchData = () => {
-    fetch(`http://192.168.211.247:8080/allItems`)
+    fetch(`http://localhost:8080/allItems`)
       .then((response) => {
         return response.json();
       })
