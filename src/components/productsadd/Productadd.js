@@ -16,7 +16,7 @@ function Productadd() {
     try {
       let res = await fetch("https://trawell-backend-production-1fec.up.railway.app/addItem", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin":"*" },
         body: JSON.stringify({
           itemName: itemName,
           img: img,
