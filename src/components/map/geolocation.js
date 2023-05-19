@@ -1,6 +1,6 @@
 import React from "react";
 import { useGeolocated } from "react-geolocated";
-import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { places } from "./restaurants";
 import L from "leaflet";
 import "./Map.css";

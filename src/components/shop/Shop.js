@@ -8,9 +8,7 @@ const UsingFetch = () => {
   const [items, setItems] = useState([]);
 
   const fetchData = () => {
-    fetch(`https://trawell-backend-production-1fec.up.railway.app/allItems`, {
-      headers: { "Access-Control-Allow-Origin":"https://trawell-website-production.up.railway.app/" }
-    })
+    fetch(`https://trawell-backend-production-1fec.up.railway.app/allItems`)
       .then((response) => {
         return response.json();
       })
