@@ -3,11 +3,9 @@
     height:max-content;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    padding:10px;
-    gap:50px;
+    gap:3rem;
     place-items: center;
-    overflow-y:scroll;  
-    padding:30px;
+    padding:5rem;
 }
 .shopcard-wrapper{
     position: relative;
@@ -18,8 +16,13 @@
     align-items: center;
     justify-content: space-between;
     color:aliceblue;
-    padding:5px;
+    padding:15px;
+    box-shadow: 4px 4px 10px rgba(101, 101, 101,40%);
+    transition: 0.5s ease-out;
+}
 
+.shopcard-wrapper:hover{
+    transform: scale(1.05);
 }
 .shop-image-wrapper{
     width:100%;

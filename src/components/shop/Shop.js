@@ -55,12 +55,12 @@ const UsingFetch = () => {
                     objectPosition: "center",
                     width: "100%",
                     height: "100%",
-                    borderRadius: "20px",
+                    borderRadius: "15px",
                   }}
                 ></img>
               </div>
               <div className="shopcard-content-wrapper">
-                <h4>{item.itemName}</h4>
+                <h4 style={{fontSize:"1.2em",fontWeight:"bolder"}}>{item.itemName}</h4>
                 <p>
                   <BiRupee />
                   {item.price}
