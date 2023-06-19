@@ -8,7 +8,7 @@ const UsingFetch = () => {
   const [items, setItems] = useState([]);
 
   const fetchData = () => {
-    fetch(`https://trawell-backend-production-1fec.up.railway.app/allItems`)
+    fetch(`https://trawell-backend-production-1f53.up.railway.app/allItems`)
       .then((response) => {
         return response.json();
       })
